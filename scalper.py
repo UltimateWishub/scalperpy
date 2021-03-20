@@ -2,10 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 driver = webdriver.Edge("C:\Program Files\msedgedriver.exe")
 import time
+driver.maximize_window()
+
 
 id = driver.find_element_by_id
 get = driver.get
-get('https://www.amazon.com/gp/product/B08FC5L3RG')
+get('https://www.amazon.com/gp/product/B08L34NZDM')
 buyButton = False
 
 while not buyButton:
@@ -19,5 +21,9 @@ while not buyButton:
         
     except:
 
-    
+        id('buy-now-button')
+        print('button')
+        id('buy-now-button').click()
+        buyButton = True
+
 

@@ -26,4 +26,8 @@ while not buyButton:
         id('buy-now-button').click()
         buyButton = True
 
+id('ap_email').send_keys("dawishwishub@gmail.com")
+id('continue').click()
 
+id('ap_password').send_keys("daawiit21")
+id('signInSubmit').click()

@@ -7,7 +7,7 @@ driver.maximize_window()
 
 id = driver.find_element_by_id
 get = driver.get
-get('https://www.amazon.com/gp/product/B08L34NZDM')
+get(' # amazon link')
 buyButton = False
 
 while not buyButton:
